@@ -18,6 +18,7 @@ public class Function
     /// <returns>API Gateway response.</returns>
     public APIGatewayProxyResponse FunctionHandler(APIGatewayProxyRequest input, ILambdaContext context)
     {
+
         string method = input.HttpMethod.ToUpper();
         string responseBody = string.Empty;
         int statusCode = (int)HttpStatusCode.OK;
